@@ -1,0 +1,68 @@
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7ff;
+    color: #003366;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Стили для шапки */
+header {
+    background-color: #005b99;
+    color: #e0f7ff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Стили для навигации */
+nav {
+    background-color: #0073e6;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+nav a {
+    color: #e0f7ff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #99ccff;
+}
+
+/* Основной контент */
+.content {
+    padding: 20px;
+    line-height: 1.6; /* Расстояние между строками */
+    flex: 1; /* Основное содержимое занимает доступное пространство */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h2 {
+    color: #005b99;
+}
+
+/* Стили для изображений */
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.wash-image {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+

@@ -1,0 +1,61 @@
+/* Общие стили для страницы "Услуги" */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7ff;
+    color: #003366;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для страницы "Услуги" */
+.content {
+    padding: 20px;
+    text-align: center; /* Выравнивание текста по центру */
+    min-height: 100vh; /* Минимальная высота для центровки содержимого */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Выравнивание содержимого вверх */
+}
+
+/* Стили для таблицы услуг */
+.services-table {
+    margin: 20px auto; /* Центрирование таблицы с небольшим отступом сверху */
+    border-collapse: collapse;
+    width: 80%; /* Ширина таблицы */
+    border: 1px solid #000000; /* Черная граница */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для улучшения видимости */
+}
+
+.services-table th, .services-table td {
+    border: 1px solid #000000; /* Черные границы ячеек */
+    padding: 15px;
+    text-align: left;
+}
+
+.services-table th {
+    background-color: #005b99;
+    color: #fff;
+    font-size: 18px;
+}
+
+.services-table td {
+    background-color: #e0f7ff;
+    color: #003366;
+    font-size: 16px;
+}
+
+.services-table tr:nth-child(even) td {
+    background-color: #b3d9ff; /* Чередование цветов строк */
+}
+
+.services-table tr:hover td {
+    background-color: #99ccff; /* Цвет при наведении */
+}
+
+.services-table caption {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

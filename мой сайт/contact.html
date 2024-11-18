@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Автомойка "Чистый Мир"</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Контейнер для контактов и регистрации */
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        /* Основной контент контактов */
+        .contact-content {
+            width: 65%;
+        }
+
+        /* Секция с регистрацией */
+        .register-section {
+            width: 30%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .register-section h3 {
+            color: #005b99;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .register-section form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .register-section form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .register-section form button {
+            background-color: #005b99;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .register-section form button:hover {
+            background-color: #004080;
+        }
+
+        /* Стили для блока соц. сетей */
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #0073e6;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .social-links a:hover {
+            color: #004080;
+        }
+
+        .social-links img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Контакты</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="services.html">Услуги</a>
+    <a href="contact.html">Контакты</a>
+    <a href="about.html">О нас</a>
+</nav>
+
+<!-- Основное содержимое -->
+<div class="content">
+    <div class="contact-container">
+        <!-- Контактная информация -->
+        <div class="contact-content">
+            <h2>Свяжитесь с нами</h2>
+            <p>Мы всегда рады вашим вопросам, отзывам и предложениям. Свяжитесь с нами любым удобным способом!</p>
+
+            <h3>Контактная информация</h3>
+            <table>
+                <tr>
+                    <td><strong>Телефон:</strong></td>
+                    <td>+373 67272726</td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td>mralexandryt@mail.ru</td>
+                </tr>
+                <tr>
+                    <td><strong>Адрес:</strong></td>
+                    <td>Bolgara 68</td>
+                </tr>
+            </table>
+
+            <!-- Ссылки на соц. сети -->
+            <div class="social-links">
+                <h3>Мы в соцсетях:</h3>
+                <a href="https://vk.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145813.png" alt="ВКонтакте"></a>
+                <a href="https://facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+                <a href="https://t.me" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"></a>
+            </div>
+        </div>
+
+        <!-- Регистрационная форма -->
+        <div class="register-section">
+            <h3>Регистрация</h3>
+            <form action="submit_registration.php" method="post">
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
